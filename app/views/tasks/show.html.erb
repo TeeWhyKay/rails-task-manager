@@ -1,5 +1,6 @@
 <h2><%= @task.title %></h2>
 <p><%= @task.details %></p>
+<br>
 <input type="checkbox" name="completed" value="completed" disabled="true" <%= 'checked' if @task.completed %>>
 <%= label_tag(:completed, 'completed') %>
 <br>

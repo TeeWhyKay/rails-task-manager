@@ -4,7 +4,7 @@ class TasksController < ApplicationController
     @tasks = Task.all
   end
 
-  def show
+  def show # params can come from form or url
   end
 
   def new

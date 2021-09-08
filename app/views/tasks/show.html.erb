@@ -1,0 +1,8 @@
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+<input type="checkbox" name="completed" value="completed" disabled="true" <%= 'checked' if @task.completed %>>
+<%= label_tag(:completed, 'completed') %>
+<br>
+<%= link_to 'Back to List', tasks_path %>
+<br>
+<%= link_to 'Edit this task', edit_task_path %>

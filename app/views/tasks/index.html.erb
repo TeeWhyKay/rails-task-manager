@@ -3,6 +3,10 @@
   <h3><%= link_to task.title, task_path(task) %></h3>
   <input type="checkbox" name="completed" value="completed" disabled="true" <%= 'checked' if task.completed %>>
   <%= label_tag(:completed, task.details) %>
+  <%= link_to "Delete this task",
+            task_path(task),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
 <% end %>
 <br>
 <br>
